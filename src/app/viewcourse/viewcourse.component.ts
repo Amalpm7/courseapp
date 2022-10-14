@@ -9,10 +9,12 @@ import { ApiService } from '../api.service';
 export class ViewcourseComponent implements OnInit {
 
   constructor(private myapi:ApiService) { this.putData()}
+  status:boolean=false
   putData=()=>{
     this.myapi.getData().subscribe(
       (data)=>{
         this.courseData=data
+        this.status=true
       }
     )
   }
