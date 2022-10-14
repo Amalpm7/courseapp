@@ -28,6 +28,11 @@ export class AddcourseComponent implements OnInit {
       (response)=>{
         console.log(response)
         alert("Succesfully Added")
+        this.courseTitle=""
+        this.courseDescription=""
+        this.courseDuration=""
+        this.courseDate=""
+        this.courseVenue=""
       }
     )
   }
